@@ -1704,8 +1704,8 @@ GameObject:
   m_Component:
   - component: {fileID: 804781295}
   - component: {fileID: 804781294}
-  - component: {fileID: 804781296}
   - component: {fileID: 804781293}
+  - component: {fileID: 804781296}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1771,8 +1771,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 804781292}
-  m_LocalRotation: {x: 0.0644504, y: -0.8557142, z: 0.10996929, w: 0.5015039}
-  m_LocalPosition: {x: 14.731262, y: 10.7794075, z: 11.597595}
+  m_LocalRotation: {x: 0.2609441, y: -0.0008670092, z: 0.00023442136, w: 0.9653535}
+  m_LocalPosition: {x: 0, y: 16, z: -20}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1788,11 +1788,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 804781292}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 17b10f2bdf97fb24e9b21522bf417fe8, type: 3}
+  m_Script: {fileID: 11500000, guid: 9e71113a8d48d3d46981c02abeaa346d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  plane: {fileID: 1714766711}
-  offset: {x: 17, y: 12, z: 12}
+  player: {fileID: 1714766711}
+  offset: {x: 0, y: 30, z: -45}
 --- !u!1001 &832382111
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3094,6 +3094,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Plane
       objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: af29f0ea7e5403641b3b244ede69c374, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: af29f0ea7e5403641b3b244ede69c374, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -3143,6 +3147,11 @@ PrefabInstance:
       propertyPath: speed
       value: 40
       objectReference: {fileID: 0}
+    - target: {fileID: 1213418613295050116, guid: af29f0ea7e5403641b3b244ede69c374,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: af29f0ea7e5403641b3b244ede69c374, type: 3}
 --- !u!1 &1714766711 stripped
@@ -3167,6 +3176,20 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &1714766723
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1714766711}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c867c40dea8823c4cbcfb8aa0cb6a43c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 40
+  turnSpeed: 45
 --- !u!1 &1716312837
 GameObject:
   m_ObjectHideFlags: 0
