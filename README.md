@@ -17,7 +17,7 @@ This Unity 3D project demonstrates the implementation of basic vehicle control s
 - Project developed as part of a learning course focused on Unity gameplay fundamentals.
 
 ## Technical requirements:
-- **Unity Version:** 2021.3.9f1 or higher.
+- **Unity Version:** 2021.3.9f1.
 - **Render Pipeline:** URP.
 - **Platforms:** PC.
 
